@@ -1,0 +1,12 @@
+{
+    "name": "pr-comment-bot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+      "probot": "^13.0.0"
+    },
+    "scripts": {
+      "start": "probot run ./index.js"
+    }
+  }
+  
