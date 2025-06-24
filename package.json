@@ -1,14 +1,23 @@
 {
     "name": "pr-comment-bot",
-    "version": "1.0.0",
+    "version": "2.0.0",
+    "description": "AI-powered GitHub PR reviewer using Azure OpenAI",
     "main": "index.js",
     "dependencies": {
       "probot": "^13.0.0",
-      "dotenv": "^16.0.0"
+      "dotenv": "^16.0.0",
+      "openai": "^4.0.0",
+      "axios": "^1.6.0",
+      "diff": "^5.1.0"
     },
     "scripts": {
       "start": "probot run ./index.js",
-      "dev": "probot run ./index.js"
-    }
+      "dev": "probot run ./index.js",
+      "test": "node test-azure-openai.js",
+      "validate": "node -e \"require('./errorHandler').validateEnvironment() && console.log('✅ Configuration valid')\""
+    },
+    "keywords": ["github", "probot", "code-review", "ai", "azure-openai"],
+    "author": "PR Reviewer Bot",
+    "license": "MIT"
   }
   
