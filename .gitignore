@@ -6,3 +6,4 @@ cert.pem
 privatekey.cer
 private-key.pem
 temp.txt
+test-*.js
